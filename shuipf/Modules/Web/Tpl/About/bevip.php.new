@@ -1,0 +1,87 @@
+
+<include file="Public:top"/>
+	<div id="wowslider-container1">
+			<div></div>
+		<div class="bread-box">
+			<span class="bread-pieces">
+				<a href="__ROOT__/">首页</a><span class="clr-ccc"> > </span><a href="{:U('About/index')}">关于我们</a><span class="clr-ccc"> > </span><a href="">成为会员</a>
+			</span>
+			</div>
+				<div class="help-pb bevip-bg-v">
+					<div class="help-top-tab bevip-tab-v">
+						<ul>
+							<a href="__URL__/creditplan"><li>奖励计划</li></a>
+							<a href="__URL__/bevip"><li  class="cur">成为会员</li></a>
+							<a href="__URL__/viprights"><li>会员权益</li></a>
+							<a href="__URL__/index"><li >零售网络</li></a>
+						</ul>
+					</div>
+					
+						<div class="bevip-top">
+                    	<span>会员等级介绍</span>
+					</div>
+                    
+                     <div class="bevip-pk">
+                    	<span>仅限现有会员</span><br />
+                    	<span>升级金卡：　<font>1年内累计消费满3,000元</font></span><br />
+                        <div class="bevip-xpbtn-pk"><a href="__URL__/viprights"><img src="{$config_siteurl}statics/web/img/xqbtn.png"></a></div>
+                    </div>
+                    
+                    	<div class="bevip-jk">
+                    	<div align="justify">
+                    	<span>申办门槛：　<font>当日消费满1,000元</font></span><br />
+                    	<span>升级白金卡：<font>1年内累计消费满10,000元</font></span><br />
+                    	<span>降级普卡：　<font>1年内累计消费3,000元以下</font></span><br />
+                    	
+                  	  </div>
+                    	<div class="bevip-xpbtn-jk"><a href="__URL__/viprights"><img src="{$config_siteurl}statics/web/img/xqbtn.png"></a></div>
+                  </div>
+					<div class="bevip-bjk">
+                    	<span>申办门槛：　<font>当日消费10,000元</font></span><br />
+                    	<span>升级钻石卡：<font>1年内累计消费满50,000元</font></span><br />
+                    	<span>降级金卡：　<font>1年内累计消费3,000-9,999元</font></span><br />
+                        <div class="bevip-xpbtn-bjk"><a href="__URL__/viprights"><img src="{$config_siteurl}statics/web/img/xqbtn.png"></a></div>
+                    </div>
+					
+                  <div class="bevip-zsk">
+                    	<span>申办门槛：<font>当日消费满50,000元</font></span><br />
+                    	   <span>降级白金卡：<font>1年内累计消费10,000-49,999元</font></span><br />
+                        <div class="bevip-xpbtn-zsk"><a href="__URL__/viprights"><img src="{$config_siteurl}statics/web/img/xqbtn.png"></a></div>
+                    </div>
+                  <div class="bevip-jzk">
+                    	<span>*仅限受邀会员办理</span>
+                        <div class="bevip-xpbtn-jzk"><a href="__URL__/viprights"><img src="{$config_siteurl}statics/web/img/xqbtn.png"></a></div>
+                    </div>
+                   
+                    <div class="bevip-ad1">
+                    	<img src="statics/web/img/bevip-ad1.png">
+                    </div>
+					<div class="bevip-top">
+                    	<span>N-VIP卡充值支付流程</span>
+					</div>
+						<img style="padding: 30px 0 25px 15px;" src="statics/web/img/recharge-flow.png" width="920" height="150" alt="">
+						<p class="help-rights-flow-wd">
+							<span>N-VIP卡顾客通过门店顾客服务中心或收银台（带有充值功能的POS机）现金支付或银行卡充值。最小充值金额为100元。</span><br>
+							<span>单个账户充值后余额不得超过5,000元。</span><br>
+							<span>使用N-VIP卡全额支付赠送50%积分</span><br>
+						</p>
+				</div>
+				<div class="ws_shadow"></div>
+			</div>
+		</div>
+			<div class="mid">
+			
+				<div class="mid-l">
+					<div class="rq-ct" style="display:none;">
+						
+						<div class="rq-box">
+							<div class="zx-box-each" id="rq-box-1"></div>
+							<div class="zx-box-each" id="rq-box-2"></div>
+							<div class="zx-box-each" id="rq-box-3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="bd-b"></div>
+	</div>
+	<include file="Public:foot"/>

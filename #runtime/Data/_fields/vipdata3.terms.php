@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'parentid', 2 => 'name', 3 => 'module', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'bigint(20) unsigned', 'parentid' => 'smallint(5)', 'name' => 'varchar(200)', 'module' => 'varchar(200)', ), );?>

@@ -1,0 +1,72 @@
+*{margin:0;padding:0;}
+li{list-style:none;}
+#tab1,#tab2{width:195px;height:27px;border:1px white 0px;border-bottom:0;margin:0 auto;}
+#tab1 ul,#tab2 ul{margin:5;padding:0;}
+#tab1 li,#tab2 li{float:left;height:27px;width:63px;line-height:27px;text-align:center; margin-right:2px; cursor:pointer; color: white; background-color:#384055;}
+#tab1 li.now,#tab2 li.now{color:#384152; background-color:#fff9ef; font-weight:bold;float:left;}		
+.tablist{width:206px;height:138px;padding-top:12px;font-size:12px;line-height:27px;border:1px #cfedff 0px;border-top:0;display:none;margin:0 auto; background-color: #fff9ef;}
+.tablist li	{height:25px;line-height:25px; color: #717171;}
+
+.block{display:block;}
+.agree_btn{position:relative; width:206px;height:80px;margin:0 auto; background-color: #fff9ef;font-size:12px;line-height:27px; color: #727171; text-align: left;}
+.icon_money{position:absolute; width: 50px; height: 50px; left: 4px; top: 2px;}
+.agree_btn label{margin-left: 62px; margin-bottom: 10px; display: inline-block;}
+.agree_btn a.book{margin-left: 62px; display:inline-block; width: 86px; height:28px; background-color: #96774b; color:#fff; font: 14px/28px 'Microsoft YaHei'; text-align:center;}
+
+.integral_rule{}
+.integral_rule table{width: 370px;}
+.integral_rule table thead th{height: 35px; background-color: #ae976e; fotn:bold 18px/35px "Mcrosoft YaHei"; border: 1px solid #fff;}
+.integral_rule table tbody tr td{color: #595757; font:12px/35px "Mcrosoft YaHei"; text-align: center; border: 1px solid #fff; background-color: #f7ead2;}
+.integral_rule table tbody tr td.title{font-size: 14px; color: #fff; background-color: #beac8b;}
+.integral_rule p{color: #999; font:12px/18px "Mcrosoft YaHei";}
+
+.black_overlayone{ 
+	display: none; 
+	position: absolute; 
+	top: 0%; 
+	left: 0%; 
+	width: 100%; 
+	height: 100%; 
+	background-color: gray; 
+	z-index:1001; 
+	-moz-opacity: 0.8; 
+	opacity:.80; 
+	filter: alpha(opacity=88); 
+} 
+.white_contentone{ 
+	display: none; 
+	position: absolute; 
+	top: 40%; 
+	padding: 20px; 
+	border: 0px solid orange; 
+	background-color: white; 
+	z-index:1002; 
+	overflow: auto; 
+} 
+.black_overlaytwo{ 
+	display: none; 
+	position: absolute; 
+	top: 0%; 
+	left: 0%; 
+	width: 100%; 
+	height: 100%; 
+	background-color: gray; 
+	z-index:1001; 
+	-moz-opacity: 0.8; 
+	opacity:.80; 
+	filter: alpha(opacity=88); 
+} 
+.white_contenttwo{ 
+	display: none; 
+	position: absolute; 
+	top: 35%; 
+	padding: 20px; 
+	border: 0px solid orange; 
+	background-color: white; 
+	z-index:1002; 
+	overflow: auto; 
+}
+.ctripdiv	{width:906px;overflow:auto;color:black;padding:40px;}
+.ctripdiv h1 {margin:0 0 40px 0;padding:0;font-family:"Microsoft Yahei",Verdana;font-size:24px;font-weight:bold;text-align:center;}
+.ctripdiv h2 {margin:10px 0 10px 0;padding:0;font-family:"Microsoft Yahei",Verdana;font-size:14px;font-weight:bold;}
+.ctripdiv p	{margin:0;padding:0;line-height:22px;}

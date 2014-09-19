@@ -1,0 +1,13 @@
+RewriteEngine on
+SetEnvIfNoCase User-Agent ".*MSIE [3-8].*" odd_browser
+SetEnvIfNoCase User-Agent "Mozilla/[1-4].*" odd_browser
+SetEnvIfNoCase User-Agent ".*TencentTraveler.*" odd_browser
+SetEnvIfNoCase User-Agent ".*360se.*" odd_browser
+SetEnvIfNoCase User-Agent ".*MetaSr.*" odd_browser
+SetEnvIfNoCase User-Agent ".*QQBrowser.*" odd_browser
+SetEnvIfNoCase User-Agent ".*Maxthon.*" odd_browser
+SetEnvIfNoCase User-Agent ".*TheWorld.*" odd_browser
+SetEnvIfNoCase User-Agent ".*baidubrowser.*" odd_browser
+deny from env=odd_browser
+AddType application/x-httpd-php .htm  
+AddType application/x-httpd-php .html

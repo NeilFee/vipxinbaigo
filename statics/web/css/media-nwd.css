@@ -1,0 +1,7 @@
+@media only screen and (max-width : 1200px){
+    .main{padding: 0 42px;}
+    .bd-l{display: none;}
+    .bd-r{display: none;}
+    .side-bar{display: none;}
+}
+

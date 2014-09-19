@@ -1,0 +1,46 @@
+body{margin: 0;background:  url('../img/index-bg2.jpg') center top;width: 100%;font: 12px 'Microsoft Yahei',tahoma, arial, 'Hiragino Sans GB', sans-serif;}
+.main{position: relative;width: 85%;margin: 0 auto;padding: 0 25px;background: #fff;clear: both;}
+.bd-l{position: absolute;left: -11px;display: inline-block;background: url('../img/z.png') 0 0 repeat-y;height: 100%;width: 11px;}
+.bd-r{position: absolute;right: -11px;display: inline-block;background: url('../img/y.png') 0 0 repeat-y;height: 100%;width: 11px;}
+.bd-tp-b{position: absolute;width: 101%;left: -4px;top: 120px;border-bottom: 1px dotted #a48f65;}
+.top{width: 100%;height: 110px;margin-bottom: 10px;clear: both;}
+.top-l{display: inline-block;width: 60%;padding: 12px 0 0 45px;float: left;}
+.logo{display: inline-block;margin: 0 20px 0 0;}
+.vip-add{display: inline-block;width: 135px;margin: 0;}
+.top-r{display: inline-block;width: 30%;float: right;font-size: 40px;font-weight: bold;color: #a48f65;text-align: right;padding: 60px 0 0 0;}
+.bd-b{position: absolute;left: 0;bottom: -10px;display: inline-block;background: url('../img/db.png') 13px 0 repeat-x;height: 10px;width: 100%;}
+.phone-ct-main{min-height: 800px;width: 100%;}
+.phone-card-show-img{margin: 45px 0 30px 45px;}
+.phone-card-show-img img{margin-right: 20px;}
+.member-info{position: relative;margin: 0 0 0 45px;}
+.member-info p{margin: 15px 0;white-space:nowrap;}
+.phone-welcome-wd{font-size: 60px;color: #a48f65;}
+.phone-card-nb{font-size: 45px;color: #333;}
+.phone-vip-lv{font-size: 45px;color: #333;}
+.phone-use-sco{font-size: 45px;color: #333;}
+.phone-sco-ddl{font-size: 35px;color: #999;}
+.bd-sec-b{position: absolute;width: 109.5%;left: -72px;bottom: -25px;border-bottom: 1px dotted #a48f65;}
+.warm-notice{color: #999;font-size: 35px;position: relative;margin: 70px 0 0 45px;}
+.warm-notice-tt{color: #999;font-size: 45px;}
+.warm-notice p{margin: 15px 0;white-space:nowrap;}
+
+.phone-vip-nmb{display: block;position: relative;margin: 50px 0 0 0;}
+.phone-vip-psw{display: block;position: relative;margin: 0 0 70px 0;}
+.phone-ct-main .vip-nmb-ipt{width: 93%;padding:0 0 0 65px;height: 110px;border: 2px solid #ccc;border-top-right-radius: 10px;border-top-left-radius: 10px;font-size: 40px;outline: none;}
+.phone-ct-main .vip-psw-ipt{width: 93%;padding:0 0 0 65px;height: 110px;border-top: none;border-bottom: 2px solid #ccc;border-right: 2px solid #ccc;border-left: 2px solid #ccc;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;font-size: 40px;outline: none;}
+.phone-vip-nmb-i{position: absolute;top: 34px;left: 18px;display: inline-block;background: url('../img/phone-icon-40.png') 0 0 no-repeat;width: 35px;height: 35px;}
+.phone-vip-psw-i{position: absolute;top: 34px;left: 18px;display: inline-block;background: url('../img/phone-icon-40.png') 0 -50px no-repeat;width: 35px;height: 35px;}
+.phone-sub-btn{width: 100%;height: 110px;border: 1px solid #a48f65;border-radius: 10px;background: #a48f65;color: #fff;font-size: 40px;cursor: pointer;outline: none;}
+.phone-vip-code{display: block;position: relative;margin: 40px 0 20px 0;width: 100%;height: 75px;}
+.vip-code-ipt{float: left;display: inline-block;width: 60%;padding:0 0 0 65px;height: 108px;margin-right: -4px;border-right: none;border-top: 2px solid #ccc;border-bottom: 2px solid #ccc;border-left: 2px solid #ccc;border-top-left-radius: 10px;border-bottom-left-radius: 10px;font-size: 40px;outline: none;}
+.phone-vip-code-i{position: absolute;top: 41px;left: 18px;display: inline-block;background: url('../img/phone-icon-40.png') 0 -100px no-repeat;width: 35px;height: 35px;}
+.phone-code-sub-btn{float: left;display: inline-block;width: 30%;height: 112px;border: 1px solid #a48f65;border-top-right-radius: 10px;border-bottom-right-radius: 10px;background: #a48f65;color: #fff;font-size: 40px;cursor: pointer;outline: none;}
+.phone-re-code-btn{margin: 25px 0 0 0;width: 100%;height: 110px;border: 1px solid #ccc;border-radius: 10px;background: #a48f65;color: #fff;font-size: 40px;cursor: pointer;outline: none;}
+
+.uncorrect-tip{position: absolute;font-size: 30px;color: red;top: 120px;}
+
+.clr-gold{color: #a48f65;}
+.blk-50{height: 50px;}
+.blk-100{height: 100px;}
+.blk-200{height: 200px;}
+.blk-300{height: 300px;}

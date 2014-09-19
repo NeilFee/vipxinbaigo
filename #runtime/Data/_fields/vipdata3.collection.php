@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'vipcode', 2 => 'collection_id', 3 => 'collection_date', 4 => 'key_name', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(10)', 'vipcode' => 'varchar(255)', 'collection_id' => 'int(11)', 'collection_date' => 'datetime', 'key_name' => 'varchar(255)', ), );?>

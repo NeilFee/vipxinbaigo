@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'menuid', 1 => 'userid', 2 => 'name', 3 => 'url', 4 => 'datetime', '_autoinc' => false, '_pk' => 'userid', '_type' => array ( 'menuid' => 'mediumint(8) unsigned', 'userid' => 'mediumint(8) unsigned', 'name' => 'char(32)', 'url' => 'char(255)', 'datetime' => 'int(10) unsigned', ), );?>

@@ -1,0 +1,9 @@
+[ 2014-08-18T17:06:22+08:00 ] 27.22.184.27 /
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2014-08-18T17:19:01+08:00 ] 119.85.131.2 /
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2014-08-18T18:54:02+08:00 ] 106.127.136.70 /
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+

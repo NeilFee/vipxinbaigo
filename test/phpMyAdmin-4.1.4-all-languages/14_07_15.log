@@ -1,0 +1,12 @@
+[ 2014-07-15T22:57:48+08:00 ] 114.226.198.2 api.weibo.com:443
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2014-07-15T22:57:48+08:00 ] 114.226.198.2 
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2014-07-15T23:21:10+08:00 ] 114.226.198.2 api.weibo.com:443
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2014-07-15T23:21:10+08:00 ] 114.226.198.2 
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+

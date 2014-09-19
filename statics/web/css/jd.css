@@ -1,0 +1,28 @@
+.w.advanced{position: relative;}
+.item{position:relative;float:left;width:235px;height:170px;overflow:hidden;margin:0;margin: 0 10px 5px 0px;border: 1px solid #cab68e;background:#f7f7f7;}
+.item .aside-ct{position:absolute;z-index:1;left:0;top:0;width:205px;padding:10px 15px 0 15px; text-align:center;white-space:nowrap;}
+.item i.rq-tag-icon,.item i.rm-tag-icon,.item i.jx-tag-icon{margin:110px 0 0 173px; z-index:10; display:none; position:absolute;}
+.item:hover i.rq-tag-icon,.item:hover i.rm-tag-icon,.item:hover i.jx-tag-icon{display:block;}
+.item .aside-icon{position:absolute;z-index:1;right:54px;top:135px;width:128px;height:27px;background: url('../img/aside-icon.png') 0 0; text-indent:5px; line-height:27px; font-size:14px;}
+.item .aside-icon a{color:#fff;}
+.item:hover .aside-icon{background: url('../img/aside-icon.png') 0 -31px;}
+.item .s-name{width:205px;font-weight: normal;color:#999;font-size:12px;line-height:20px; text-indent:-600px; overflow:hidden;}
+.item:hover .s-name{text-indent:0;}
+.item .s-name a{color: #666;font-weight: 500;font-size: 14px;}
+.item .s-hotword{padding:10px 0 0}
+.item .s-hotword li{position:relative;line-height:18px;padding-left:6px;height:18px;overflow:hidden;color:#888;font-family:"microsoft yahei"}
+.item .s-hotword li i{position:absolute;display:block;overflow:hidden;vertical-align:middle;left:0;top:8px;width:2px;height:2px;background:#999}
+.item .s-img{display:block;width:295px;height:190px; z-index:5;}
+.item .s-img img{display:block;position:absolute;left:0;top:0; width:235px; height:170px;}
+.item:hover .s-img img{display:block;position:absolute;top:42px; width:117px; height:86px;}
+.item.w-bg .aside{/*filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#fff', endColorstr='#fff');background:rgba(255,255,255,0.5);background:#fff\0.5;filter:alpha(Opacity=50);*/}
+.item.w-bg .aside-ct{}
+.item.w-bg .s-name{color:#a48f65;margin-bottom: 5px;font-weight: normal;}
+.item.w-bg .s-name a{font-weight:bold;color:#a48f65;}
+.item.w-bg .s-ext{margin-top:0;font-weight: normal;}
+.item.w-bg .s-ext b{padding:0;color:#95774c;font-weight: normal;}
+.sc-ext .item{float:left;width:323px;height:70px;margin-right:11px;overflow:hidden}
+.item{width:235px}
+.sc-ext .item{width:235px}
+.advanced .item .s-img img{-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-ms-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;left:0}
+.advanced .item:hover .s-img img,.advanced .item:active .s-img img{left:59px;}

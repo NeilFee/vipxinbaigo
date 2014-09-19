@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'urlruleid', 1 => 'module', 2 => 'file', 3 => 'ishtml', 4 => 'urlrule', 5 => 'example', '_autoinc' => true, '_pk' => 'urlruleid', '_type' => array ( 'urlruleid' => 'smallint(5) unsigned', 'module' => 'varchar(15)', 'file' => 'varchar(20)', 'ishtml' => 'tinyint(1) unsigned', 'urlrule' => 'varchar(255)', 'example' => 'varchar(255)', ), );?>

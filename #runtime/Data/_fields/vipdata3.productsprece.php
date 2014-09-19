@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 's_price', 2 => 'e_price', 3 => 'date_time', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(11)', 's_price' => 'varchar(255)', 'e_price' => 'varchar(255)', 'date_time' => 'datetime', ), );?>
