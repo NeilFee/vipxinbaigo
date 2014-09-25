@@ -1,0 +1,1 @@
+alter table vip_city add region_id int(11);
