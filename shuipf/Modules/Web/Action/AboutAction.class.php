@@ -112,5 +112,20 @@ class AboutAction extends BaseAction
 		$this->display();
 	}
 	
+	/**
+	*如何使用1
+	**/
+	public function newworld()
+	{
+		$this->display();
+	}
+	
+	/**
+	*如何使用1
+	**/
+	public function pentahotels()
+	{
+		$this->display();
+	}
 	
 }

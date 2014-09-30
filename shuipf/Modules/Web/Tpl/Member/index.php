@@ -75,7 +75,25 @@
 						</li>
 					</ul>
 				</div>
+				
+
+				
 				<div class="card-ct">
+					<!--begin 携程 订单查询 20140928-->
+					<ul class="mid-tab" style="margin-bottom: -4px;">
+						<li class="zs" style="border-bottom-color: #a48f65;width: 95px;height: 28px;">
+							<div><span style="color: #a48f65;font-size: 14px;font-weight: bold;">我的携程订单</span></div>
+					</ul>
+  				<div class="xc_content">
+  					<ul>
+  						<li>
+  					<span class="xc_search"><a href="http://my.ctrip.com/home/FastOrder/OrderSearch.aspx" target="_blank" ><img src="{$config_siteurl}statics/web/img/i1.jpg" style="vertical-align:middle" />机票订单</a></span>
+  					<span class="xc_search"><a href="http://my.ctrip.com/home/FastOrder/OrderSearch.aspx" target="_blank" ><img src="{$config_siteurl}statics/web/img/i2.png" style="vertical-align:middle"  />酒店订单</a></span>
+  					<span class="xc_search"><a href="http://my.ctrip.com/home/FastOrder/OrderSearch.aspx" target="_blank" ><img src="{$config_siteurl}statics/web/img/i3.png" style="vertical-align:middle"  />团购订单</a></span>
+  					<span class="xc_search"><a href="http://my.ctrip.com/home/FastOrder/OrderSearch.aspx" target="_blank" ><img src="{$config_siteurl}statics/web/img/i4.png" style="vertical-align:middle"  /> 度假订单</a></span></li>	
+      			</ul>
+      		</div>
+					<!--end-->
 					<ul class="mid-tab" style="margin-bottom: -4px;">
 						<li class="zs" style="border-bottom-color: #a48f65;width: 95px;height: 28px;">
 							<a href="" style="color: #a48f65;font-size: 14px;font-weight: bold;">专属活动</a>
@@ -142,4 +160,5 @@
 		</div>
 		<div class="bd-b"></div>
 	</div>
+</div>
 <include file="foot"/>		

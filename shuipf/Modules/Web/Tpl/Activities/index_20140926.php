@@ -215,12 +215,6 @@
 			   $("#ordertype").val("groupon");
 			   $("#groupCity").val("");
 			   $("#imgjf").attr("src", "/statics/web/img/newindex/icon_money.jpg");
-			}else if(n==3){
-				//切换到度假查询
-			   $("#ordertype").val("travel");
-			   $("#fromArea").val("");
-			   $("#toAreaCn").val("");
-			   $("#imgjf").attr("src", "/statics/web/img/newindex/icon_money3.jpg");
 			}
 		}
 		//表单验证
@@ -322,21 +316,6 @@
 			   }
 			   var grouponurl = "http://u.ctrip.com/union/CtripRedirect.aspx?TypeID=50&CityName="+groupCity+"&AllianceID=22185&SID=455955&ouid="+cardNum;
 			   window.open(grouponurl,"_blank");
-			}else if(ordertype=='travel'){
-			   var fromArea = encodeURIComponent(encodeURIComponent($("#fromArea").val()));
-			   var toAreaCn = encodeURIComponent(encodeURIComponent($("#toAreaCn").val()));
-			   if(fromArea==null || fromArea=='') {
-				   alert("出发地不能为空！");
-				   $("#fromArea").focus();
-				   return;
-			   }
-			   if(toAreaCn==null || toAreaCn=='') {
-				   alert("目的地不能为空！");
-				   $("#toAreaCn").focus();
-				   return;
-			   }
-			   var travelurl = "http://u.ctrip.com/union/CtripRedirect.aspx?TypeID=30&StartCity="+fromArea+"&SearchValue="+toAreaCn+"&Channel=1&CurrentTab=126&sid=455955&allianceid=22185&ouid="+cardNum;
-			   window.open(travelurl,"_blank");
 			}				 
 		}
 		//加载国际数据
@@ -585,15 +564,14 @@
 										<tr> <td class="title">*酒店</td> <td>1元=2分</td> </tr>
 										<tr> <td class="title">机票</td> <td>4元=1分</td> </tr>
 										<tr> <td class="title">团购</td> <td>4元=1分</td> </tr>
-										<tr> <td class="title">度假</td> <td>1元=1分</td> </tr>
 									</tbody>
 								</table>
 								<p>* 可累计积分之酒店单间夜最高消费为600元；消费超过600元，将以600元计。</p>
 								<p>* 积分累积比例视订单类型而定，若出现非整数情况,相应的百货积分取整数发放。</p>
 							</div>
 							<div style="padding-top:20px;text-align:center;">
-								<a id="various1" style="display: inline-block; width: 200px; height: 45px; background-color: #a48f65; font:bold 18px/45px 'Microsoft YaHei'; color: #fff;" href="http://vip.xinbaigo.com/index.php?m=activities#inline1" onClick="openDialogOne()">查看活动规则</a>　　　　　
-								<a id="various2" style="display: inline-block; width: 200px; height: 45px; background-color: #a48f65; font:bold 18px/45px 'Microsoft YaHei'; color: #fff;" href="http://vip.xinbaigo.com/index.php?m=activities#inline2" onClick="openDialogTwo()">积分获取说明</a>
+								<a id="various1" style="display: inline-block; width: 200px; height: 45px; background-color: #a48f65; font:bold 18px/45px 'Microsoft YaHei'; color: #fff;" href="http://vip.xinbaigo.com/index.php?m=activities#inline1" onclick="openDialogOne()">查看活动规则</a>　　　　　
+								<a id="various2" style="display: inline-block; width: 200px; height: 45px; background-color: #a48f65; font:bold 18px/45px 'Microsoft YaHei'; color: #fff;" href="http://vip.xinbaigo.com/index.php?m=activities#inline2" onclick="openDialogTwo()">积分获取说明</a>
 							</div>
 							</td>
 							<td style="height:10px;background:url('{$config_siteurl}statics/web/img/newindex/Rightline.jpg') repeat-y;">&nbsp;</td>
@@ -611,23 +589,22 @@
 					    <div style="width:210px; margin-top:65px;">
 					    	<div id="tab1">
 								<ul>
-									<li onMouseOver="setTab(1,0)" class="now" style="width:45px;">机票</li>
-									<li onMouseOver="setTab(1,1)" class="" style="width:45px;">酒店</li>
-									<li onMouseOver="setTab(1,2)" class="" style="width:45px;">团购</li>
-									<li onMouseOver="setTab(1,3)" class="" style="width:45px;">度假</li>
+									<li onmouseover="setTab(1,0)" class="now">机票</li>
+									<li onmouseover="setTab(1,1)" class="">酒店</li>
+									<li onmouseover="setTab(1,2)" class="">团购</li>
 								</ul>
 							</div>
 							<div id="tablist1">
 								<div class="tablist block" style="display: block;">
 										<ul>			
 											<li style="display:none;"><input type="hidden" id="ordertype" value="flight"></li>
-											<li style="text-align:center;"><input type="radio" checked="checked" value="20" name="FlightType" id="FlightTypeIn" onClick="javascript:changeMainland();">&nbsp;<label for="FlightTypeIn">国内机票</label>&nbsp;&nbsp;<input type="radio" value="21" name="FlightType" id="FlightTypeOut" onClick="javascript:changeAbroad();">&nbsp;<label for="FlightTypeOut">国际机票</label></li>
+											<li style="text-align:center;"><input type="radio" checked="checked" value="20" name="FlightType" id="FlightTypeIn" onclick="javascript:changeMainland();">&nbsp;<label for="FlightTypeIn">国内机票</label>&nbsp;&nbsp;<input type="radio" value="21" name="FlightType" id="FlightTypeOut" onclick="javascript:changeAbroad();">&nbsp;<label for="FlightTypeOut">国际机票</label></li>
 											<li style="height: 12px"></li>
 											<li>&nbsp;出发城市：<input type="text" style="width:120px;height:25px;border:2px solid #dfdbd6;padding-left:4px;" id="fromCityCn" name="fromCityCn" class="input_20txt_gray"><input type="hidden" name="fromCityVal" value="" id="fromCityVal"></li>
 											<li style="height: 8px"></li>
 											<li>&nbsp;到达城市：<input type="text" style="width:120px;height:25px;border:2px solid #dfdbd6;padding-left:4px;" id="toCityCn" name="toCityCn"><input type="hidden" name="toCityVal" value="" id="toCityVal"></li>
 											<li style="height: 8px"></li>
-											<li>&nbsp;出发日期：<input style="width:120px;height:25px;border:2px solid #dfdbd6;padding-left:4px;" type="text" id="EntTime2" name="EntTime2" onClick="return showCalendar('EntTime2', 'y-mm-dd');"></li>
+											<li>&nbsp;出发日期：<input style="width:120px;height:25px;border:2px solid #dfdbd6;padding-left:4px;" type="text" id="EntTime2" name="EntTime2" onclick="return showCalendar('EntTime2', 'y-mm-dd');"></li>
 											
 										</ul>
 								</div>
@@ -635,13 +612,13 @@
 									
 									<ul>
 										<li style="display:none"><input type="hidden" id="dcity"> </li>
-										<li style="text-align:center;"><input type="radio" value="10" checked="checked" name="hotelType" id="hotelTypeIn" onClick="javascript:changeMainland();">&nbsp;<label for="hotelTypeIn">国内酒店</label>&nbsp;&nbsp;<input type="radio" value="273" name="hotelType" id="hotelTypeOut" onClick="javascript:changeAbroad();">&nbsp;<label for="hotelTypeOut">国际酒店</label></li>
+										<li style="text-align:center;"><input type="radio" value="10" checked="checked" name="hotelType" id="hotelTypeIn" onclick="javascript:changeMainland();">&nbsp;<label for="hotelTypeIn">国内酒店</label>&nbsp;&nbsp;<input type="radio" value="273" name="hotelType" id="hotelTypeOut" onclick="javascript:changeAbroad();">&nbsp;<label for="hotelTypeOut">国际酒店</label></li>
 										<li style="height: 12px"></li>
 										<li>&nbsp;入住城市：<input type="text" style="width:120px;height:25px;border:2px solid #dfdbd6;padding-left:4px;" name="inCity" id="inCity"><input type="hidden" name="inCityVal" value="" id="inCityVal"></li>
 										<li style="height: 8px"></li>
-										<li>&nbsp;入住日期：<input style="width:120px;height:25px;border:2px solid #dfdbd6;padding-left:4px;" type="text" id="EntTime" name="EntTime" onClick="return showCalendar('EntTime', 'y-mm-dd');"></li>
+										<li>&nbsp;入住日期：<input style="width:120px;height:25px;border:2px solid #dfdbd6;padding-left:4px;" type="text" id="EntTime" name="EntTime" onclick="return showCalendar('EntTime', 'y-mm-dd');"></li>
 										<li style="height: 8px"></li>
-										<li>&nbsp;退房日期：<input style="width:120px;height:25px;border:2px solid #dfdbd6;padding-left:4px;" type="text" id="EntTime3" name="EntTime3" onClick="return showCalendar('EntTime3', 'y-mm-dd');">
+										<li>&nbsp;退房日期：<input style="width:120px;height:25px;border:2px solid #dfdbd6;padding-left:4px;" type="text" id="EntTime3" name="EntTime3" onclick="return showCalendar('EntTime3', 'y-mm-dd');">
 									</ul>
 								</div>
 								<div class="tablist" style="display: none;">
@@ -650,16 +627,9 @@
 										<li>&nbsp;团购城市：<input type="text" style="width:120px;height:25px;border:2px solid #dfdbd6;padding-left:4px;" name="groupCity" id="groupCity"></li>
 									</ul>
 							  </div>
-							  <div class="tablist" style="display: none;">
-									<ul>
-										<li>&nbsp;出发地：<input type="text" style="width:120px;height:25px;border:2px solid #dfdbd6;padding-left:4px;" id="fromArea" name="fromArea" class="input_20txt_gray"><input type="hidden" name="fromAreaVal" value="" id="fromAreaVal"></li>
-										<li style="height: 8px"></li>
-										<li>&nbsp;目的地：<input type="text" style="width:120px;height:25px;border:2px solid #dfdbd6;;padding-left:4px;" id="toAreaCn" name="toAreaCn"><input type="hidden" name="toAreaVal" value="" id="toAreaVal"></li>
-									</ul>
-							  </div>
 							  <div class="agree_btn">
 							  		<div class="icon_money"><img id="imgjf" src='{$config_siteurl}statics/web/img/newindex/icon_money.jpg' /></div>
-							  		<label style=" text-decoration:underline"><input type="checkbox" value="1"  style="position:relative; top:2px;" id="isok" name="isok"  />&nbsp;<a id="various1" onClick="openDialogOne()">我同意相关活动条款</a></label></li>
+							  		<label style=" text-decoration:underline"><input type="checkbox" value="1"  style="position:relative; top:2px;" id="isok" name="isok"  />&nbsp;<a id="various1" onclick="openDialogOne()">我同意相关活动条款</a></label></li>
 									<a class="book" onClick="javascript:checkorder();">立即预定</a>
 							  </div>
 							</div>
@@ -707,7 +677,7 @@
 			<p>免单的订单将给予订单金额返还（除税费以及其他附加费用以外），且返款金额最多不超过人民币5,000元；若订单金额超过人民币5,000元，返款金额以人民币5,000元计。返款将以新世界百货N-card的形式发放给获奖会员。</p>
 			<h2>奖品领取</h2>
 			<p>获奖名单将于2015年1月底在本网站公布。我们将通过电话的方式联系获奖会员前往选定门店领取奖品。获奖会员须在收到领奖通知之日起的两周内领取奖品。逾期者视为弃权，奖品不作发放。</p>
-      <p style="text-align:right;"><a id="various" style="display: inline-block;  font: 14px 'Microsoft YaHei';  color: #a48f65;" onClick="openDialogTwo()">积分获取说明>></a></p>
+      <p style="text-align:right;"><a id="various" style="display: inline-block;  font: 14px 'Microsoft YaHei';  color: #a48f65;" onclick="openDialogTwo()">积分获取说明>></a></p>
 			</div>
 </div>
 <div id="lighttwo" class="white_contenttwo" style="display: none; height:620px; overflow:scroll;
@@ -734,7 +704,7 @@
 		<p>4.积分将在成功订购并完成旅程后的次月月底前计入您的新世界百货/巴黎春天会员账户内。</p>
 		<p>5.有关预定、积分相关问题，请致电会员服务热线400-810-7666；有关携程出行产品相关问题，座机免费拨打800-820-6666；手机拨打1010-6666 </p>	
 		<p>6.本网站上发布的所有旅游类产品（含酒店、机票和团购）均由携程网提供，新世界百货会员中心对产品不做任何担保及承诺。若您预订的旅游产品出现任何问题，请直</p><p>　接联系携程网。</p>
-    <p style="text-align:right;"><a id="various" style="display: inline-block;  font: 14px 'Microsoft YaHei';  color: #a48f65;" onClick="openDialogOne()">查看活动规则>></a></p>
+    <p style="text-align:right;"><a id="various" style="display: inline-block;  font: 14px 'Microsoft YaHei';  color: #a48f65;" onclick="openDialogOne()">查看活动规则>></a></p>
 		</div>
 </div>		
 <include file="Public:foot"/>

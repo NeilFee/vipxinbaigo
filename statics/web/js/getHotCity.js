@@ -1712,6 +1712,108 @@ $(document).ready(
 				}
 			}).click(function() {
 			});
+			
+			// 度假出发地
+			$("#fromArea").focus(function() {
+				showDomesticCity();
+				loadJsFlag = true;
+				if (isClick) {
+					$("#form_cities2").css("display", "none");
+					sugSelectItem2 = 0;
+					isClick = false;
+					cur = -1;
+				} else {
+					if (cur == -1) {
+						$(".AbcSearch li").removeClass('action');
+						$('.popcitylist').css("display", "none");
+						$("#ul_list1").css("display", "block");
+						$("#flip_cities2").css("display", "none");
+						$("#nav_list1").addClass("action");
+						$('.ac_even').removeClass('ac_over').addClass('ac_odd');
+						$("#form_cities2").css("display", "block");
+					}
+				}
+			
+				curObj = $("#fromArea");
+				curObjCode = $("#fromAreaVal");
+				cur = 0;
+				var toCityCn = $("#fromArea").val();
+				cityfield_focused = true;
+				SetISPos($("#fromArea"));
+			}).blur(function() {
+				curObj = $("#fromArea");
+				curObjCode = $("#fromAreaVal");
+				cur = 0;
+				isClick = false;
+				loadJsFlag = true;
+				if (!mousedownOnPanel && !mousedownOnPanel2) {
+			
+					cityfield_focused = false;
+					$("#form_cities").css("display", "none");
+					$("#form_cities2").css("display", "none");
+					cur = -1;
+					sugSelectItem2 = 0;
+					// 空条件过滤出所有城市列表
+					array_cities_filter = filterCity("");
+			
+					city_showlist(0);
+			
+					setFromStationStyle();			
+				}
+			}).click(function() {
+				// clearStation('from', 'click');
+			});
+			
+			// 度假到达地
+			$("#toAreaCn").focus(function() {
+				// 空条件过滤出国际城市列表
+				showInternationalCity();
+				loadJsFlag = true;
+				if (isClick) {
+					$("#form_cities2").css("display", "none");
+					sugSelectItem2 = 0;
+					isClick = false;
+					cur = -1;
+				} else {
+					if (cur == -1) {
+						$(".AbcSearch li").removeClass('action');
+						$('.popcitylist').css("display", "none");
+						$("#ul_list1").css("display", "block");
+						$("#flip_cities2").css("display", "none");
+						$("#nav_list1").addClass("action");
+						$('.ac_even').removeClass('ac_over').addClass('ac_odd');
+						$("#form_cities2").css("display", "block");
+					}
+				}
+			
+				curObj = $("#toAreaCn");
+				curObjCode = $("#toAreaVal");
+				cur = 0;
+				var toCityCn = $("#toAreaCn").val();
+				cityfield_focused = true;
+				SetISPos($("#toAreaCn"));
+			}).blur(function() {
+				curObj = $("#toAreaCn");
+				curObjCode = $("#toAreaVal");
+				cur = 0;
+				isClick = false;
+				loadJsFlag = true;
+				if (!mousedownOnPanel && !mousedownOnPanel2) {
+			
+					cityfield_focused = false;
+					$("#form_cities").css("display", "none");
+					$("#form_cities2").css("display", "none");
+					cur = -1;
+					sugSelectItem2 = 0;
+					// 空条件过滤出所有城市列表
+					array_cities_filter = filterCity("");
+			
+					city_showlist(0);
+			
+					setFromStationStyle();
+			
+				}
+			});
 
 			$('#form_cities').mousedown(function() {
 				mousedownOnPanel = true;

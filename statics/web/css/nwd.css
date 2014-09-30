@@ -225,7 +225,7 @@ a .side-tx-wb:hover{background: url('../img/side-bar.png') no-repeat -4px -329px
 .new-gift li.subscribe h2 span{font-size:16px; float:right; margin-right:5px; line-height:30px;}
 .new-gift li.subscribe img{clear:right;float:right;margin:7px 5px 0 0px;}
 
-.vip-ct-main{min-height: 800px;}
+.vip-ct-main{min-height: 900px;}
 
 .vip-ct-l {float: left;width: 175px;height: 530px;display: inline-block;margin: 80px 10px 40px 0;text-align: center;}
 .vip-ct-l-tpbd{width: 175px;height: 5px;border-bottom: 1px solid #fff;background: #beaa81;border-top-left-radius: 3px;border-top-right-radius: 3px;}
@@ -797,6 +797,7 @@ p.help-rights-flow-wd span{background:url('../img/dian.png') 0 5px no-repeat; pa
 .viprights-table1 table tr.sing td.bl{background:#ae976e;}
 .viprights-table1 table tr td h1{background:#ae976e;font-family:"微软雅黑"; font-size:21px; color:#fff; font-weight:700; display:block; margin:4px 0;}
 .viprights-table1 table tr td h3{background:#ae976e;font-family:"微软雅黑"; font-size:14px; color:#fff; display:block; margin:4px 0;}
+.viprights-table1 table tr td h5{background:#ae976e;font-family:"微软雅黑";  color:#fff; display:block; margin:4px 0;}
 .viprights-table2{text-align:center; margin:3px 0 0 0;}
 .viprights-table2 table tr td{background:#f3d8f0; font-family:"微软雅黑"; font-size:12px; color:#2e2e2e; border-collapse:collapse; padding:5px 0;}
 .viprights-table2 table tr td.bl{background:#dba0d4;}
@@ -816,3 +817,23 @@ p.help-rights-flow-wd span{background:url('../img/dian.png') 0 5px no-repeat; pa
 .shadow{position:fixed; background:#000; top:0; left:0; width:100%; height:100%;filter:alpha(opacity=30);-moz-opacity:0.3;-khtml-opacity: 0.3;opacity: 0.3; z-index:199999; display:none;}
 .cengbox{position:fixed; top:0px; width:660px; height:640px; background:#000; left:366px; filter:alpha(opacity=30);-moz-opacity:0.3;-khtml-opacity: 0.3;opacity: 0.3; z-index:299999;border-radius:10px;display:none;}
 .ceng{position:fixed; top:10px; width:640px; height:620px; background:#fff; left:376px; z-index:300000;display:none;}
+.xc_search{display:block; float:left; width:150px; height:40px; line-height:40px; text-align:center; font-size:14px; color:#353535; }
+.xc_content{ overflow:hidden; padding:20px 30px; border:1px solid #CCCCCC;  width:645px; background:#FFF;}
+
+.STYLE2 {	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+}
+.STYLE3 {	font-size: 13px;
+	color: #000000;
+}
+.STYLE4 {	color: #ae976e;
+	font-weight: bold;
+}
+.STYLE6 {	font-size: 11px;
+	color: #000000;
+}
+.STYLE7 {font-size: 13px}
+-->
+.viprights-table2 table tr td.bg-1,.viprights-table2 table tr td.bg-1 td{
+    background:#fff;
